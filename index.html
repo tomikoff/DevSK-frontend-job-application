@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/jpg" href="Images/Logo.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    
+
+    <!-- JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<title>Space Cowboy</title>
+</head>
+<body>
+
+<div class="container">  
+    <div id="Welcome" style="width: 100%;min-height:720px;height:720px;background-color: #161b20;">
+        <div id="WelcomeBGR"> 
+            <div id="CenterTEXTdiv"> <p class="Title" style="text-align: center;cursor: default;">HEY THERE, <br id="BRspace"> WE ARE <br>
+                SPACECOWBOY </p>
+                <p class="Title" style="font-size: calc(0.5em + 1vw);">- an independent space agency -</p></div> 
+
+            <div style="text-align:center;width: 100%;position: absolute;top:65%"><button id="Button_LEARN" onClick="document.getElementById('Facts').scrollIntoView();">LEARN MORE</button></div>
+        </div>
+
+        
+
+        <div id="TopMenu"><img style="margin-left: 13.4375%;" src="Images/Logo.png" alt="Space Cowboy Logo" width="35px" height="35px"><div id="TopMenu_Right" ><a id="AboutUsB" class="Menu" onClick="document.getElementById('Facts').scrollIntoView();">ABOUT US</a><a class="Menu" id="TheTeamB" onClick="document.getElementById('Team').scrollIntoView();document.getElementById('Team_Phone').scrollIntoView();">THE TEAM</a><a class="Menu" id="ImpressionsB" onClick="document.getElementById('Gallery').scrollIntoView();">IMPRESSIONS</a><a class="Menu" id="ContactB" onClick="document.getElementById('Form').scrollIntoView();">CONTACT</a></div><div id="TopMenu_Right_Phone" ><button id="Button_Menu" onclick="MakeVisible()"><img id="Close_Image" src="Images/Form 7.png" >MENU</button></div></div>
+        
+        <div id="Menu_Phone">
+            <a id="AboutUsA" class="Menu2" onClick="document.getElementById('Facts').scrollIntoView();">ABOUT US</a>
+            <div class="break"></div>
+            <a id="TheTeamA" class="Menu2" onClick="document.getElementById('Team').scrollIntoView();document.getElementById('Team_Phone').scrollIntoView();">THE TEAM</a>
+            <div class="break"></div>
+            <a id="ImpressionsA" class="Menu2" onClick="document.getElementById('Gallery').scrollIntoView();">IMPRESSIONS</a>
+            <div class="break"></div>
+            <a id="ContactA" class="Menu2" onClick="document.getElementById('Form').scrollIntoView();">CONTACT</a>
+        </div>
+        
+    
+    </div>
+
+    
+
+    <div id="Facts" >
+        
+        <div id="TextDiv"><p class="FactsTitle">A FEW FACTS ABOUT US</p> <p class="FactsSubline">Before you do business with us,<br>  you might want to know a little bit more about our company:</p></div>
+        
+
+        <div id="Facts3" > 
+            <div class="Fact Fact_Margin" ><img src="Images/Ellipse 1.png" class="ImageEllipse"><img src="Images/Form 1.png" class="ImageIcon" id="Fact1_IMG">
+                <div style="text-align: center;width: 90%;margin-left: 5%;margin-right: 5%;position:absolute;top: 15.75%;"><p class="FactSmall_Title">WE ARE COWBOYS</p>
+                    <div style="text-align: center;width: 100%;height:160px;position:absolute;top: 120%;"><p class="FactSmall_Text">You might have guessed that from our company name, but the fact is: 
+                        Yes, we are indeed cowboys. Cowboys who‘d like to go to space.
+                        Deal with it.</p>
+                    </div>
+                </div>
+            </div> 
+            
+            
+            <div class="Fact Fact_Margin" ><img src="Images/Ellipse 1.png" class="ImageEllipse"><img src="Images/Form 5.png" class="ImageIcon" id="Fact2_IMG">
+                <div style="text-align: center;width: 90%;margin-left: 5%;margin-right: 5%;position:absolute;top: 15.75%;"><p class="FactSmall_Title">WE LIKE TO TINKER</p>
+                    <div style="text-align: center;width: 100%;height:160px;position:absolute;top: 120%;"><p class="FactSmall_Text">There are a lot of things lying around on a typical Cowboy Ranch. 
+                        So we started putting them together, and got really good at rocket building.</p>
+                    </div>
+                </div>
+            </div>     
+            <div class="Fact"><img src="Images/Ellipse 1.png" class="ImageEllipse"><img src="Images/Form 4.png" class="ImageIcon" id="Fact3_IMG">
+                <div style="text-align: center;width: 90%;margin-left: 5%;margin-right: 5%;position:absolute;top: 15.75%;"><p class="FactSmall_Title">WE EXPLORE SPACE</p>
+                    <div style="text-align: center;width: 100%;height:160px;position:absolute;top: 120%;"><p class="FactSmall_Text">Once we got our first proper rocket, everything went quite fast. 
+                        And now we are the #1 independent space agency in the world. 
+                        Who would have guessed?</p>
+                    </div>
+                </div>
+            </div>     
+        </div>    
+
+    </div>
+
+    <div id="Team">
+        <div id="TextDiv" style="background-color: transparent;"><p class="TeamTitle">THE TEAM</p> <p class="TeamSubline">Yep, that‘s us. Six fine fellows, eager to get on the next adventure.<br>
+            Click on the pictures to get some more information!</p>
+        </div>
+        
+        <div id="Team3"> 
+            <div class="flip-container TeamMember_Margin">
+                <div class="flipper TeamMember_Margin">
+                    <div class="front TeamMember TeamMember_Margin"  >
+                        <div class="CowboyIMG" style="background-image: url(Images/Cowboys/cowboy-1.png);"></div>
+                        <div style="position: absolute;left: 54.05%;width: 45.95%;height: 100%;">
+
+                            <div class="CowboyFILTER" ></div>
+
+                            <p class="MemberName" style="margin-top: 50px;">DICK</p>
+                            <p class="MemberName" style="margin-top: 2px;">HARWEY</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">CAPTAIN</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">AGE: <strong>56</strong></p>
+                            <p class="MemberName FontWeight">MISSIONS: <strong>13</strong></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="back TeamMemberQuote TeamMember_Margin">
+                        <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p class="MemberQuoteTitle">DICK‘S FAMOUS QUOTE:</p></div>
+                        <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                            <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+                    
+
+            <div class="flip-container TeamMember_Margin">
+                <div class="flipper TeamMember_Margin">
+                    <div class="front TeamMember TeamMember_Margin"  >
+                        <div class="CowboyIMG" style="background-image: url(Images/Cowboys/cowboy-2.png);"></div>
+                        <div style="position: absolute;left: 54.05%;width: 45.95%;height: 100%;">
+
+                            <div class="CowboyFILTER" ></div>
+
+                            <p class="MemberName" style="margin-top: 50px;">RICHIE</p>
+                            <p class="MemberName" style="margin-top: 2px;">FARHEM</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">ENGINEER</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">AGE: <strong>48</strong></p>
+                            <p class="MemberName FontWeight">MISSIONS: <strong>13</strong></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="back TeamMemberQuote TeamMember_Margin">
+                        <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p class="MemberQuoteTitle">RICHIE‘S FAMOUS QUOTE:</p></div>
+                        <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                            <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>  
+
+            <div class="flip-container ">
+                <div class="flipper ">
+                    <div class="front TeamMember "  >
+                        <div class="CowboyIMG" style="background-image: url(Images/Cowboys/cowboy-3.png);"></div>
+                        <div style="position: absolute;left: 54.05%;width: 45.95%;height: 100%;">
+
+                            <div class="CowboyFILTER" ></div>
+
+                            <p class="MemberName" style="margin-top: 50px;">JOHN</p>
+                            <p class="MemberName" style="margin-top: 2px;">SIRACHA</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">GUNSLINGER</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">AGE: <strong>47</strong></p>
+                            <p class="MemberName FontWeight">MISSIONS: <strong>13</strong></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="back TeamMemberQuote ">
+                        <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p class="MemberQuoteTitle">JOHN‘S FAMOUS QUOTE:</p></div>
+                        <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                            <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>   
+        </div> 
+
+        <div id="Team2"> 
+            <div class="flip-container TeamMember_Margin">
+                <div class="flipper TeamMember_Margin">
+                    <div class="front TeamMember TeamMember_Margin"  >
+                        <div class="CowboyIMG" style="background-image: url(Images/Cowboys/cowboy-4.png);"></div>
+                        <div style="position: absolute;left: 54.05%;width: 45.95%;height: 100%;">
+
+                            <div class="CowboyFILTER" ></div>
+
+                            <p class="MemberName" style="margin-top: 50px;">BERT</p>
+                            <p class="MemberName" style="margin-top: 2px;">McNAMERA</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">CAPTAIN</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">AGE: <strong>71</strong></p>
+                            <p class="MemberName FontWeight">MISSIONS: <strong>13</strong></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="back TeamMemberQuote TeamMember_Margin">
+                        <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p class="MemberQuoteTitle">BERT‘S FAMOUS QUOTE:</p></div>
+                        <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                            <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+              
+
+            <div class="flip-container ">
+                <div class="flipper ">
+                    <div class="front TeamMember "  >
+                        <div class="CowboyIMG" style="background-image: url(Images/Cowboys/cowboy-5.png);"></div>
+                        <div style="position: absolute;left: 54.05%;width: 45.95%;height: 100%;">
+
+                            <div class="CowboyFILTER" ></div>
+
+                            <p class="MemberName" style="margin-top: 50px;">AL</p>
+                            <p class="MemberName" style="margin-top: 2px;">SVERINGE</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">CEO</p>
+                            <p class="MemberName FontWeight" style="margin-top: 10px;">AGE: <strong>76</strong></p>
+                            <p class="MemberName FontWeight">MISSIONS: <strong>13</strong></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="back TeamMemberQuote ">
+                        <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p class="MemberQuoteTitle">AL‘S FAMOUS QUOTE:</p></div>
+                        <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                            <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+        </div> 
+        
+    </div>
+
+    <div id="Team_Phone">
+
+        <div id="TextDiv" style="background-color: transparent;"><p class="TeamTitle">THE TEAM</p> <p class="TeamSubline">Yep, that‘s us. Six fine fellows, eager to get on the next adventure.<br>
+            Click on the pictures to get some more information!</p>
+        </div>
+
+        <div style="width: 100%;overflow: hidden;background-color: unset;">
+        <div style="width: 300%;height: 200px;background-color: unset;position: relative;margin-top: 2em;overflow: hidden;margin-left: calc(-100% );margin-right: -100%;">
+
+            <div id="Team3_phone"> 
+
+                <div class="flip-container_phone ">
+                    <div class="flipper_phone ">
+                        <div class="front_phone TeamMember2 "  >
+                            <div class="CowboyIMG" id="MemberIMG1" style="background-image: url(Images/Cowboys/cowboy-1.png);"></div>
+                            <div class="CowboyINFO">
+    
+                                <div class="CowboyFILTER" ></div>
+    
+                                <p class="MemberName" id="MemberName1" style="margin-top: 33px;">DICK</p>
+                                <p class="MemberName" id="MemberSurname1"style="margin-top: 2px;">HARWEY</p>
+                                <p class="MemberName FontWeight" id="MemberPosition1" style="margin-top: 10px;">CAPTAIN</p>
+                                <p class="MemberName FontWeight" id="MemberAge1" style="margin-top: 10px;">AGE: <strong>56</strong></p>
+                                <p class="MemberName FontWeight" id="MemberMission1">MISSIONS: <strong>13</strong></p>
+                            </div>
+                        </div> 
+                        
+                        <div class="back_phone TeamMemberQuote_phone TeamMember_Margin">
+                            <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p id="MemberQuote1" class="MemberQuoteTitle">DICK‘S FAMOUS QUOTE:</p></div>
+                            <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                                <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+    
+                        
+                <div class="flip-container_phone " style="margin-left: 20px;">
+                    <div class="flipper_phone ">
+               
+                        <div class=" TeamMember2 "  >
+                            <div class="CowboyIMG" id="MemberIMG2" style="background-image: url(Images/Cowboys/cowboy-2.png);"></div>
+                            <div class="CowboyINFO">
+    
+                                <div class="CowboyFILTER" ></div>
+    
+                                <p class="MemberName" id="MemberName2" style="margin-top: 33px;">RICHIE</p>
+                                <p class="MemberName" id="MemberSurname2" style="margin-top: 2px;">FARHEM</p>
+                                <p class="MemberName FontWeight" id="MemberPosition2" style="margin-top: 10px;">ENGINEER</p>
+                                <p class="MemberName FontWeight" id="MemberAge2" style="margin-top: 10px;">AGE: <strong>48</strong></p>
+                                <p class="MemberName FontWeight" id="MemberMission2">MISSIONS: <strong>13</strong></p>
+                            </div>
+                        </div> 
+                        
+                        <div class="back_phone TeamMemberQuote_phone TeamMember_Margin">
+                            <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p id="MemberQuote2" class="MemberQuoteTitle">RICHIE‘S FAMOUS QUOTE:</p></div>
+                            <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                                <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+    
+                <div class="flip-container_phone " style="margin-left: 20px;">
+                    <div class="flipper_phone ">
+
+                        <div class="front_phone TeamMember2"  >
+                            <div class="CowboyIMG" id="MemberIMG3" style="background-image: url(Images/Cowboys/cowboy-3.png);"></div>
+                            <div class="CowboyINFO">
+    
+                                <div class="CowboyFILTER" ></div>
+    
+                                <p class="MemberName" id="MemberName3" style="margin-top: 33px;">JOHN</p>
+                                <p class="MemberName" id="MemberSurname3" style="margin-top: 2px;">SIRACHA</p>
+                                <p class="MemberName FontWeight" id="MemberPosition3" style="margin-top: 10px;">GUNSLINGER</p>
+                                <p class="MemberName FontWeight" id="MemberAge3" style="margin-top: 10px;">AGE: <strong>47</strong></p>
+                                <p class="MemberName FontWeight" id="MemberMission3">MISSIONS: <strong>13</strong></p>
+                            </div>
+                        </div> 
+                        
+                        <div class="back_phone TeamMemberQuote_phone ">
+                            <div style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%;margin-top: 16px;"><p id="MemberQuote3" class="MemberQuoteTitle">JOHN‘S FAMOUS QUOTE:</p></div>
+                            <div style="width: 80%;height: auto;margin-right: 10%;margin-left: 10%;">
+                                <p class="MemberQuoteText">„This is a small step for me, but a big step for, like,<br> a small kid“</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+        </div> 
+        </div>
+            
+            <div style="width: 100%;height: 3em;position: relative;">
+                <div id="left_arrow2" onclick="ChangeMemberLeft()" class="arrow_pos2" ><img src="Images/Image_Lightroom/ellipse_arrow.png" class="Arrow_Ellipse" ><img src="Images/Image_Lightroom/left_arrow.png" class="arrow" style="margin-left: 12px;"></div>
+                <div id="right_arrow2" class="arrow_pos2" onclick="ChangeMemberRight()"><img src="Images/Image_Lightroom/ellipse_arrow.png" class="Arrow_Ellipse"><img src="Images/Image_Lightroom/right_arrow.png" class="arrow" style="margin-left: 12px;"></div>
+                <div style="width: 50%;height: inherit;position: absolute;left: 0;right: 0;margin: auto;">
+                    <div style="display: flexbox; justify-content: space-evenly;gap: 10px;text-align: center;"><img  id="e1" src="Images/Ellipse 3.png" class="Team_Ellipse"><img id="e2" src="Images/as.png" class="Team_Ellipse"><img id="e3" src="Images/Ellipse 3.png" class="Team_Ellipse"><img id="e4" src="Images/Ellipse 3.png"class="Team_Ellipse"><img id="e5" src="Images/Ellipse 3.png"class="Team_Ellipse"></div>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div id="Gallery" >
+        <div id="TextDiv" style="background-color: transparent;"><p class="TeamTitle">LOOK AT ALL THOSE STARS!</p> <p class="TeamSubline">Some impressions from our trips to frickin outer space, enjoy!</p></div>
+
+        <!-- 
+        <div id="Impression6">
+            <div id="Impression6" > 
+                <div class="Impression Impression_Margin"></div>
+                <div class="Impression Impression_Margin"></div>
+                
+                <div class="Impression "></div>
+            </div>
+            <div id="Impression6" > 
+                <div class="Impression Impression_Margin"></div>
+                <div class="Impression Impression_Margin"></div>
+                
+                <div class="Impression "></div>
+            </div>
+        </div>
+        -->
+        <div id="GalleryHelpDiv" >
+            <div id="Impression6" > 
+                <div class="Impression ImpressionIMG2" style="background-image: url(Images/Impressions/1.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/2.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/3.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/4.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/5.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/6.png);"></div>
+            </div>
+            <div id="Impression6" style="padding-top:20px" > 
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/7.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/8.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/9.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/10.png);"></div>
+                <div class="Impression ImpressionIMG" style="background-image: url(Images/Impressions/11.png);"></div>
+                <div class="Impression ImpressionIMG2" style="background-image: url(Images/Impressions/12.png);"></div>
+            </div>
+        </div>
+        <div id="Lightroom" >
+             <div id="left_arrow" class="arrow_pos"><img src="Images/Image_Lightroom/ellipse_arrow.png" class="Arrow_Ellipse" style="padding-left: 0.5px;"><img src="Images/Image_Lightroom/left_arrow.png" class="arrow"><p class="LightroomText">PREVIOUS IMAGE </p></div>
+            <div id="Gallery_lightroom" ></div>
+            <div id="right_arrow" class="arrow_pos"><img src="Images/Image_Lightroom/ellipse_arrow.png" class="Arrow_Ellipse"><img src="Images/Image_Lightroom/right_arrow.png" class="arrow"><p class="LightroomText">NEXT IMAGE </p></div>
+            <div id="Gallery_close"><img src="Images/Image_Lightroom/Ellipse_X.png" class="Arrow_Ellipse" style="padding-left: 0.2px;"><img src="Images/Image_Lightroom/×.png" class="close"></div>
+            <div id="LightroomText_IMP"><p>Well, this was amazing!</p></div>
+        </div>
+        
+
+        <div id="GalleryBottomPadding"></div>
+
+    </div>
+
+    <div id="Form" >
+        <div id="TextDiv" style="width: 80%;margin-left: 10%;margin-right: 10%;"><p class="FormTitle">SAY HELLO</p> <p class="FormSubline">Got some questions about us? Wanna do business with us?<br> Or do you want to send us your latest cat-content - there you go:</p></div>
+
+        
+            <div style="width: 100%;height: auto;position: relative;">
+            <form action="/action_page.php">
+                
+                
+                <input id="InputName"  class="Input" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                
+                <img id="Correct1"  src="Images/Form/Form_correct.png">
+                
+                
+                <input id="InputLastName"  class="Input" type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <img id="Correct2" src="Images/Form/Form_correct.png">
+
+                <input id="InputMail"  class="Input" type="email" id="mail" name="mail" placeholder="E-Mail"><br><br>
+                <img id="Correct3" src="Images/Form/Form_correct.png">
+                <img id="Incorrect1" src="Images/Form/Form_incorrect.png">
+
+                <textarea id="InputTextArea"class="InputMessage" name="message" placeholder="Your message"></textarea>
+
+                <input id="Button_LEARN" class="InputButton"  type="submit" value="SEND THAT MAIL">
+              </form> 
+            </div>
+        
+    </div>
+
+    <div id="Footer" style="width: 100%;height:130px;max-height: 130px;background-color: #161b20;position: relative;">
+        <p class="FooterText" style="left: 0;right: 0;margin: auto;margin-top:1em">Copyright © 2021 by Tomáš Štrba</p>
+        <p class="FooterText" style="left: calc(50% - 75px);margin: auto;margin-top: 4.5em;">SPACE</p><img style="position: absolute;left: 0;right: 0;top:0;bottom: 0; margin:auto;margin-top: 3.5em;" src="Images/Logo_Big.png">
+        <p class="FooterText" style="left: calc(50% + 20px);margin-top: 4.5em;">COWBOY</p>
+    </div>
+
+
+</div> 
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
